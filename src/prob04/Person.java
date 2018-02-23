@@ -5,9 +5,12 @@ public class Person {
 	private int age;
 	private String name;
 	
-	public Person( String name ){
+	public Person() {
 		this.name = "";
 		this.age = 12;
+	}
+	
+	public Person( String name ){
 		this.name = name;
 		++numberOfPerson;
 	}

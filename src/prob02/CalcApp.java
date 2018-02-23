@@ -29,11 +29,6 @@ public class CalcApp {
 		case "/":
 			System.out.println(new Div().calculate(a, b));
 			break;
-
-		// 사칙연산 외에 연산일 경우 예외처리
-		default: 
-			System.out.println("알수없는 연산입니다. ");
-			break;
 		}
 	}
 }
