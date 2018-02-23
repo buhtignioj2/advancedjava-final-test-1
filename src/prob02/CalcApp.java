@@ -27,6 +27,10 @@ public class CalcApp {
 			break;
 
 		case "/":
+			if( a == 0 || b == 0 ) {
+				System.out.println("나누기를 0으로 할수 없습니다.");
+				break;
+			}
 			System.out.println(new Div().calculate(a, b));
 			break;
 		}
