@@ -1,9 +1,9 @@
 package prob05;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
-
 
 public class LoginMain {
 
@@ -22,7 +22,17 @@ public class LoginMain {
 		/*
 		 *  로그인 처리 부분을 완성 합니다.
 		 */
+		User loginUser = new User(id, password);
 		
+
+		try {
+			login(joinUsers, loginUser);
+			System.out.println("로그인 성공");
+		} catch (UserNotFoundException e) {
+			System.out.println(e.getMessage());
+		} catch (PasswordDismatchException e) {
+			System.out.println(e.getMessage());
+		}
 
 	}
 	
